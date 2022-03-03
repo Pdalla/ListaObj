@@ -12,6 +12,15 @@ public class Fornecedor extends Pessoa {
         return valorCredito;
     }
 
+    @Override
+    public String toString() {
+        return "Fornecedor{" +
+                "valorCredito=" + valorCredito +
+                ", valorDivida=" + valorDivida +
+                ", obterSaldo=" + obterSaldo +
+                '}';
+    }
+
     public float getValorDivida() {
         return valorDivida;
     }

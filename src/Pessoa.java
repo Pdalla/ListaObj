@@ -1,4 +1,4 @@
-public class Pessoa {
+public class Pessoa extends Main{
     private String nome;
     private String endereco;
     private String telefone;
@@ -26,7 +26,20 @@ public class Pessoa {
         this.telefone = telefone;
         this.endereco = endereco;
     }
-    void funcionariodados(){
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", telefone='" + telefone + '\'' +
+                '}';
+    }
+
+    public void Pessoa(){
+
+    }
+    public void  funcionariodados(){
         System.out.println("O nome completo ou nome fantasia : "+ nome);
         System.out.println("O endereco é : "+ endereco);
         System.out.println("O contato é : "+ telefone);
